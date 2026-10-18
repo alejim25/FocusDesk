@@ -10,10 +10,24 @@ let savedSessions = JSON.parse(localStorage.getItem(storageKey)) || [];
 function showSessions() {
   sessions.innerHTML = '';
 
-  savedSessions.forEach((savedSession) => {
+  savedSessions.forEach((savedSession, index) => {
     const session = document.createElement('div');
     session.className = 'session';
-    session.textContent = `Estudiaste ${savedSession.subject} durante ${savedSession.minutes} minutos`;
+
+    const sessionText = document.createElement('span');
+    sessionText.textContent = `Estudiaste ${savedSession.subject} durante ${savedSession.minutes} minutos`;
+
+    const deleteButton = document.createElement('button');
+    deleteButton.type = 'button';
+    deleteButton.textContent = 'Eliminar';
+    deleteButton.addEventListener('click', () => {
+      savedSessions.splice(index, 1);
+      localStorage.setItem(storageKey, JSON.stringify(savedSessions));
+      showSessions();
+    });
+
+    session.appendChild(sessionText);
+    session.appendChild(deleteButton);
     sessions.appendChild(session);
   });
 
