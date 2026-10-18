@@ -22,6 +22,41 @@ button {
   margin-top: 24px;
 }
 
+.weekly-chart {
+  align-items: end;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  gap: 12px;
+  height: 220px;
+  margin-top: 16px;
+  padding: 16px 8px 0;
+}
+
+.chart-column {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+  justify-content: end;
+}
+
+.chart-value,
+.chart-label {
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.chart-bar {
+  background: #3478c5;
+  min-height: 2px;
+  width: min(40px, 80%);
+}
+
+.chart-label {
+  margin-top: 8px;
+}
+
 .session {
   border: 1px solid #ccc;
   margin-top: 8px;
