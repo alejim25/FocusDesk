@@ -1,3 +1,3 @@
-# FocusDesk
+## Objetivo
 
-Proyecto de aprendizaje de desarrollo con IA.
+Registrar sesiones de estudio de forma simple.
