@@ -1,0 +1,24 @@
+{
+  "name": "focusdesk",
+  "version": "1.0.0",
+  "description": "Registrar sesiones de estudio de forma simple.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejim25/FocusDesk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/alejim25/FocusDesk/issues"
+  },
+  "homepage": "https://github.com/alejim25/FocusDesk#readme",
+  "devDependencies": {
+    "prettier": "^3.9.10"
+  }
+}
